@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="login_div" class="main-div">
+    <h3>Firebase Web login Example</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+  </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBdyRH8adBoO_otTngKfvzqPq5LFojHSAM",
+      authDomain: "gopaperless-59d8e.firebaseapp.com",
+      databaseURL: "https://gopaperless-59d8e.firebaseio.com",
+      projectId: "gopaperless-59d8e",
+      storageBucket: "gopaperless-59d8e.appspot.com",
+      messagingSenderId: "252382890255",
+      appId: "1:252382890255:web:be0611bc0031c37be2d67a",
+      measurementId: "G-EGKV3C1SDT"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="sign_in.js"></script>
+
+</body>
+
+</html>
